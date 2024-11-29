@@ -1,0 +1,165 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #d3d3d3;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 00px;
+  margin: 15px;
+}
+
+.about .blog-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: teal;
+}
+
+.icon{
+  writing-mode: vertical-rl;
+}
+
+.about .blog-name .icon {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.blog-description {
+  font-size: 0.9em;
+  color: #555;
+  margin: 10px 0;
+}
+
+.social-icons a {
+  margin: 0 5px;
+  color: #333;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.services{
+  text-align: center;
+  align-items: center;
+}
+
+.links h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links ul li {
+  margin: 8px 0;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.links ul li a:hover {
+  color: #ff6347;
+}
+
+.message-text {
+  font-size: 1.1em;
+  font-weight: bold;
+  animation: textColorChange 3s infinite alternate; /* Apply animation */
+}
+
+/* Keyframes for text color transition */
+@keyframes textColorChange {
+  0% {
+      color: #ff6f61; /* Light red */
+  }
+  25% {
+      color: #ffa500; /* Orange */
+  }
+  50% {
+      color: #32cd32; /* Green */
+  }
+  75% {
+      color: #1e90ff; /* Blue */
+  }
+  100% {
+      color: #6a5acd; /* Purple */
+  }
+}
+
+
+.back-to-top {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 8px 15px;
+  margin-top: 10px;
+  font-size: 0.9em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #444;
+}
+
+.resources{
+  margin: 15px;
+  text-align: center;
+}
+
+.resources ul li{
+  list-style-type: none;
+  margin: 8px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .about .blog-name,
+  .message-text {
+    font-size: 1.2em;
+  }
+
+  .links ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .links ul li {
+    margin: 5px 10px;
+  }
+
+  .back-to-top {
+    width: 100%;
+  }
+}
